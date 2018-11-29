@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    align-content: space-between;
+
+}
+
+.wrapper > * {
+    padding: 1rem;
+}
+
+.header {
+    flex-basis: 100%;
+    background: rgb(240,100,73);
+    background: linear-gradient(to bottom,rgba(240,58,71,1) 0%, rgb(240, 8, 35) 100%);
+    order: 1;
+    height: 50px;
+}
+
+.main {
+    /*background: rgb();*/
+    background: linear-gradient(to bottom, rgba(175, 71, 80, 0.33) 0%, rgb(175, 77, 153) 100%);
+    flex: 4 1 1px;
+    order: 3;
+
+}
+
+.aside {
+    background: linear-gradient(to bottom, rgba(39,111,191,0.33) 0%,rgba(39,111,191,1) 100%);
+    flex-grow: 1;
+}
+
+.aside-1 {
+    background: linear-gradient(to bottom, rgba(24, 48, 89, 0.33) 0%, rgba(244, 116, 59, 1) 100%);
+    order: 2;
+}
+
+.aside-2 {
+    background: linear-gradient(to bottom, rgba(24,48,89,0.33) 0%, rgb(51, 174, 65) 100%);
+    order: 4;
+}
+
+.footer {
+    flex-basis: 100%;
+    background: linear-gradient(to bottom, rgba(24,48,89,0.33) 0%, rgb(0, 252, 159) 100%);
+    order: 5;
+    height: 50px;
+}
+
